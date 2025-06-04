@@ -1,9 +1,15 @@
 import './App.css'
+import Button from './components/Button.jsx'
 import Greeting from './components/Greeting.jsx'
 import LoginStatus from './components/LoginStatus.jsx'
+import Notification from './components/Notification.jsx'
+import UserInfo from './components/UserInfo.jsx'
 import UserProfile from './components/UserProfile.jsx'
+import TaskList from './components/TaskList.jsx'
 
 function App() {
+
+  const tasks = ["Learn JSX", "Build a React app", "Explore hooks"];
 
   return (
     <>
@@ -19,6 +25,18 @@ function App() {
       <h2>Is login?</h2>
       <LoginStatus isLoggedIn={true} />
       <LoginStatus isLoggedIn={false} />
+      <h2>Button</h2>
+      <Button />
+      <h2>Notification</h2>
+      <Notification type="success"/>
+      <Notification />
+      <Notification type="error"/>
+      <Notification type="warning"/>
+      <h2>Is Administrator?</h2>
+      <UserInfo isAdmin={false} />
+      <UserInfo isAdmin={true} />
+      <h2>Task list</h2>
+      <TaskList tasks={tasks} />
     </>
   )
 }

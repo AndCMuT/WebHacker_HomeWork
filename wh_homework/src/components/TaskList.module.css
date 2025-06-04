@@ -1,0 +1,9 @@
+.tasks {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    font-size: 20px;
+}
+.tasks > li {
+    padding-left: 40px;
+}

@@ -1,0 +1,23 @@
+.notification {
+    width: 300px;
+    height: 250px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #d3f7fc;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 5px bisque;
+}
+.success {
+    background-color: #97e251a8;
+}
+.warning {
+    background-color: #f0482aa8;
+    color: black;
+}
+.error {
+    background-color: #fcff44a8;
+    color: rgb(248, 89, 40);
+}
